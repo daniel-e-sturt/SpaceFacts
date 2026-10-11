@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceFacts | Explore the Solar System</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #070b19;
+            color: #f1f5ff;
+        }
+
+        header {
+            text-align: center;
+            padding: 75px 20px 65px;
+            background:
+                radial-gradient(ellipse at 50% 0%, #283f78, transparent 70%),
+                #0b1023;
+        }
+
+        header h1 {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            margin: 10px 0;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            color: #c2cce8;
+            font-size: 1.2rem;
+            max-width: 650px;
+            margin: 15px auto 25px;
+            line-height: 1.7;
+        }
+
+        .tagline {
+            color: #8bdcff;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 0.85rem;
+        }
+
+        .main-link {
+            display: inline-block;
+            background: #79cfff;
+            color: #071020;
+            padding: 14px 24px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .main-link:hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        nav {
+            background: #0d1429;
+            border-block: 1px solid #263456;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #cbd8f6;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: #79cfff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px 60px;
+        }
+
+        .section-heading {
+            margin-top: 40px;
+            margin-bottom: 8px;
+            font-size: 2rem;
+        }
+
+        .section-description {
+            color: #aebbd8;
+            line-height: 1.7;
+        }
+
+        .planet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .planet-card {
+            background: linear-gradient(145deg, #151f3b, #0d1428);
+            border: 1px solid #293958;
+            border-radius: 18px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .planet-card:hover {
+            transform: translateY(-5px);
+            border-color: #79cfff;
+        }
+
+        .planet-icon {
+            font-size: 2.7rem;
+        }
+
+        .planet-card h3 {
+            margin-bottom: 8px;
+            font-size: 1.4rem;
+        }
+
+        .planet-card p {
+            color: #b8c5e0;
+            line-height: 1.6;
+            min-height: 50px;
+        }
+
+        .planet-card a {
+            color: #8bdcff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .planet-card a:hover {
+            text-decoration: underline;
+        }
+
+        .feature {
+            margin-top: 35px;
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid #354568;
+            background: linear-gradient(120deg, #192b50, #11182e);
+        }
+
+        .feature h2 {
+            margin-top: 0;
+        }
+
+        .feature p {
+            color: #c2cce8;
+            line-height: 1.7;
+        }
+
+        footer {
+            text-align: center;
+            padding: 28px 20px;
+            border-top: 1px solid #263456;
+            color: #9eaccb;
+        }
+
+        footer a {
+            color: #8bdcff;
+        }
+
+        @media (max-width: 500px) {
+            header {
+                padding: 55px 18px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+
+            .planet-card p {
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="tagline">Your Solar System Explorer</div>
+        <h1>SpaceFacts</h1>
+        <p>
+            Eight planets, one star, and an enormous amount to discover.
+            Explore strange worlds, colossal storms, icy moons and
+            the mysteries of our cosmic neighbourhood.
+        </p>
+        <a class="main-link" href="All Planets.html#mercury">
+            Explore the Planets →
+        </a>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="#planets">Planets</a>
+        <a href="#mars">Mars</a>
+        <a href="#more">More to Explore</a>
+    </nav>
+
+    <main>
+        <section id="planets">
+            <h2 class="section-heading">Choose Your Destination</h2>
+            <p class="section-description">
+                Start exploring! Select a planet to discover facts about
+                its atmosphere, surface, moons and journey around the Sun.
+            </p>
+
+            <div class="planet-grid">
+
+                <article class="planet-card">
+                    <div class="planet-icon">☿</div>
+                    <h3>Mercury</h3>
+                    <p>A tiny, crater-covered world with extreme temperature changes.</p>
+                    <a href="All Planets.html#mercury">Explore Mercury →</a>
+                </article>
+
+                <article class="planet-card">
+                    <div class="planet-icon">🟠</div>
+                    <h3>Venus</h3>
+                    <p>The hottest planet, hidden beneath thick clouds.</p>
+                    <a href="All Planets.html#venus">Explore Venus →</a>
+                </article>
+
+                <article class="planet-card">
+                    <div class="planet-icon">🌍</div>
+                    <h3>Earth</h3>
+                    <p>Our home world, with oceans and the only known life.</p>
+                    <a href="All Planets.html#earth">Explore Earth →</a>
+                </article>
+
+                <article class="planet-card" id="mars">
+                    <div class="planet-icon">🔴</div>
+                    <h3>Mars</h3>
+                    <p>A rusty desert world with giant volcanoes and ancient valleys.</p>
+                    <a href="All Planets.html#mars">Explore Mars →</a>
+                </article>
+
+                <article class="planet-card">
+                    <div class="planet-icon">🟤</div>
+                    <h3>Jupiter</h3>
+                    <p>The giant planet with enormous storms and fascinating moons.</p>
+                    <a href="All Planets.html#jupiter">Explore Jupiter →</a>
+                </article>
+
+                <article class="planet-card">
+                    <div class="planet-icon">🪐</div>
+                    <h3>Saturn</h3>
+                    <p>A gas giant surrounded by spectacular rings of ice and dust.</p>
+                    <a href="All Planets.html#saturn">Explore Saturn →</a>
+                </article>
+
+                <article class="planet-card">
+                    <div class="planet-icon">🔵</div>
+                    <h3>Uranus</h3>
+                    <p>An icy world tilted almost completely onto its side.</p>
+                    <a href="All Planets.html#uranus">Explore Uranus →</a>
+                </article>
+
+                <article class="planet-card">
+                    <div class="planet-icon">🔵</div>
+                    <h3>Neptune</h3>
+                    <p>A distant blue world with incredibly powerful winds.</p>
+                    <a href="All Planets.html#neptune">Explore Neptune →</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="feature" id="more">
+            <h2>🌌 The whole Solar System</h2>
+            <p>
+                The planets are only the beginning. Our Solar System also
+                contains dwarf planets, hundreds of moons, asteroids,
+                comets and much more.
+            </p>
+            <a class="main-link"
+               href="https://science.nasa.gov/solar-system/planets/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore NASA's Planet Guide
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>SpaceFacts — Keep looking up.</p>
+    </footer>
+
+</body>
+</html>
